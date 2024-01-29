@@ -1,2 +1,141 @@
 @import "reset.css";
 @import "var.css";
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  padding: 10px;
+  padding-bottom: 0;
+  margin-bottom: 16px;
+}
+
+.background-image {
+  height: 300px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.hero-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-name {
+  float: left;
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+  font-weight: bold;
+}
+
+.hero-info {
+  word-break: break-all;
+  margin-bottom: 16px;
+}
+
+.actor-image {
+  width: 100px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.actor-info-container {
+  cursor: pointer;
+  border-bottom: 2px solid rgb(1, 1, 1, 0.2);
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.actor-meta {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.actor-name {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.actor-info {
+  text-align: center;
+}
+
+/* Ironman */
+
+.background-image.ironman {
+  background-image: url("../images/dh/ironman/background.jpg");
+}
+
+.hero-image.ironman {
+  background-image: url("../images/dh/ironman/ironman.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: heroFadeIn 1s ease-in;
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.actor-image.ironman {
+  background-image: url("../images/dh/ironman/actor.jpeg");
+  float: left;
+}
+
+/* Spiderman */
+
+.background-image.spiderman {
+  background-image: url("../images/dh/spiderman/background.jpg");
+}
+
+.hero-image.spiderman {
+  background-image: url("../images/dh/spiderman/spiderman.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: heroFadeIn 1s ease-in;
+}
+
+.actor-image.spiderman {
+  background-image: url("../images/dh/spiderman/actor.jpeg");
+  float: left;
+}
+
+/* Dr.Strange */
+
+.background-image.dr-strange {
+  background-image: url("../images/dh/dr-strange/background.jpg");
+}
+
+.hero-image.dr-strange {
+  background-image: url("../images/dh/dr-strange/dr-strange.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: heroFadeIn 1s ease-in;
+}
+
+.actor-image.dr-strange {
+  background-image: url("../images/dh/dr-strange/actor.jpeg");
+  float: left;
+}

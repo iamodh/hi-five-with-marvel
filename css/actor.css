@@ -1,0 +1,86 @@
+@import "reset.css";
+@import "var.css";
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  padding: 10px;
+  padding-bottom: 0;
+  margin-bottom: 16px;
+}
+
+.screenshot-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.screenshot {
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-btn-left,
+.carousel-btn-right {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(1, 1, 1, 0.6);
+  padding: 0px 4px;
+}
+
+.carousel-btn-left {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-btn-right {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.info-container {
+  margin-bottom: 16px;
+}
+
+.works-container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.work {
+  display: flex;
+  margin-right: 8px;
+  height: 240px;
+}
+
+.work-poster {
+  margin-right: 8px;
+}
+
+.work-info {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-title {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.work-synopsis {
+  font-size: 0.8rem;
+}
