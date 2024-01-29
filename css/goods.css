@@ -1,0 +1,70 @@
+@import "reset.css";
+@import "var.css";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+
+#container {
+    display: flex;
+  flex-direction: column;
+}
+
+
+img {
+  max-width: 425px;
+  height: auto;
+  position: relative;
+}
+
+.caption {
+  display: none;
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #222;
+}
+
+.ex01 {
+  font-size: large;
+  color: #fff
+}
+
+.product {
+  max-width: 100%;
+  height: auto;
+}
+
+.review {
+  display: flex;
+}
+
+h3 {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+#box1 {
+  max-width: 50%;
+  height: auto;
+}
+
+#box2 {
+  max-width: 50%;
+  height: auto;
+}
+
+video {
+  max-width: 425px;
+  height: auto;
+}
