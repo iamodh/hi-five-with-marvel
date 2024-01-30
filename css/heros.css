@@ -74,6 +74,10 @@ main {
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Ironman */
 
 .background-image.ironman {
