@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "var.css";
+
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
 
@@ -10,61 +11,160 @@
   font-family: 'Black Han Sans', sans-serif;
 }
 
-
-#container {
-    display: flex;
+main {
+  display: flex;
   flex-direction: column;
 }
 
+#event {
+  display: flex;
+  width:1000px;
+  margin:20px auto;
+  flex-direction: column;
+}
 
-img {
-  max-width: 425px;
-  height: auto;
+.event-list {
+  display: flex;
+  list-style:none;
+  padding:0;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.event-list li {
+  float: left;
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;
   position: relative;
 }
-
-.caption {
-  display: none;
+.event-list img {
+  margin:0;
+  padding:0;
+  width: 300px;
+  height: 200px;
+  float:left;
+  z-index:5;
+} 
+.event-list .introduction {
   position: absolute;
-  max-width: 100%;
-  height: auto;
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid #222;
+  top:200px;
+  width:300px;
+  height:200px;
+  padding-top:20px;
+  background:rgba(0,0,0,0.6);
+  opacity:0; 
+  transition: all 0.6s ease-in-out;
+  z-index:10;
 }
-
-.ex01 {
-  font-size: large;
-  color: #fff
+.event-list li:hover .introduction {
+  opacity: 1;
+  transform: translateY(-200px);
+}  
+.event-list .introduction h2 {
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
 }
 
 .product {
-  max-width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.product input[id*="slide"] {
+	display:none;
+}
+
+
+.product .prodwrap {
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+  position: relative;
+}
+
+.product .prodlist {
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.product .prodlist > li {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	transition: all .5s;
+}
+
+.product .prodlist > li> a {
+	display: block;
+	position: relative;
+  width: 200px;
   height: auto;
 }
+
+/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+
+.product .slide-control {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:10;
+  width:100%;
+  height:100%;
+}
+
+.product .slide-control label {
+  position:absolute;
+  z-index:1;
+  top:50%;
+  transform:translateY(-50%);
+  padding:50px;
+  cursor:pointer;
+}
+
+.product .slide-control .left {
+  left:30px;
+  background:url("../images/jh/left.png") center center / 100% no-repeat;
+}
+
+.product .slide-control .right {
+  right:30px;
+  background:url("../images/jh/right.png") center center / 100% no-repeat;
+}
+
+.product .slide-control [class*="control"] {
+  display:none;
+}
+
+.product [id="slide01"]:checked ~ .prodwrap .prodlist > li {transform:translatex(0%);}
+.product [id="slide02"]:checked ~ .prodwrap .prodlist > li {transform:translatex(-100%);}
+.product [id="slide03"]:checked ~ .prodwrap .prodlist > li {transform:translatex(-200%);}
+
+.product .slide-control [class*="control"] {display:none;}
+.product [id="slide01"]:checked ~ .prodwrap .control01 {display: block;}
+.product [id="slide02"]:checked ~ .prodwrap .control02 {display: block;}
+.product [id="slide03"]:checked ~ .prodwrap .control03 {display: block;}
+
 
 .review {
-  display: flex;
-}
-
-h3 {
-  display: flex;
-}
-
-a {
-  text-decoration: none;
-}
-
-#box1 {
-  max-width: 50%;
+  width:1000px;
   height: auto;
+  display:flex; /* 플렉스 컨테이너 지정 */
+  margin-bottom:30px;
 }
 
-#box2 {
-  max-width: 50%;
-  height: auto;
+.box {
+  flex-direction: row;
+  padding:5px 35px;
+  margin:5px;   
+  width:100px;
+  height: 100px;
+  background-color:#222;
+  border-radius: 20px;   
 }
 
-video {
-  max-width: 425px;
-  height: auto;
+.box i {
+  text-align: center;
+  line-height: 90px;
+  color:#fff;
 }
