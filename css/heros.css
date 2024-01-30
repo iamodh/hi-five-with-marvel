@@ -14,7 +14,6 @@ main {
   background-color: var(--color-black);
   color: var(--color-white);
   font-weight: bold;
-  position: relative;
 }
 
 .title::before {
@@ -35,7 +34,7 @@ main {
 .hero-info-container {
   background-color: var(--color-black);
   margin-bottom: 64px;
-  padding-top: 8px;
+  padding-top: 16px;
   display: flex;
   flex-direction: column;
 }
@@ -63,24 +62,25 @@ main {
 }
 
 .hero-name {
-  float: left;
   font-size: 1.5rem;
-  padding-right: 0.5rem;
   font-weight: bold;
+  padding: 4px;
   font-family: "Black Han Sans";
   background-color: var(--color-red);
   color: var(--color-white);
-  margin-left: var(--margin-side);
 }
 
 .hero-info {
-  padding-bottom: 8px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-desc {
   word-break: break-all;
   color: var(--color-white);
-  line-height: 1.6;
+  line-height: 1.4;
   margin: 0px var(--margin-side);
 }
 
@@ -198,9 +198,107 @@ main {
     flex-direction: row;
   }
   .hero-info {
-    max-width: calc(100vw - 310px);
+    max-width: calc(100% - 310px);
   }
   .background-image {
     margin-left: var(--margin-side);
+  }
+}
+
+/* Header */
+/* nav-top */
+.nav-top-conatiner {
+  height: 52px;
+}
+
+.nav-top-container {
+  height: 52px;
+  background-color: var(--color-black);
+}
+
+.nav-top-container {
+  display: flex;
+}
+
+.nav-top-start {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+.nav-top-start a {
+  display: flex;
+  align-items: center;
+}
+
+.nav-top-mid {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.nav-top-mid h1 {
+  padding: 3px;
+  width: 103%;
+  font-size: 35px;
+  height: 100%;
+  color: var(--color-white);
+  font-family: "Black Han Sans", sans-serif;
+  background-color: var(--color-red);
+}
+.nav-top-end {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.nav-top-end a {
+  display: flex;
+  align-items: center;
+}
+
+/* nav-bottom */
+.nav-bottom-conatiner {
+  display: flex;
+  background-color: var(--color-black);
+  height: 40px;
+}
+
+.nav-bottom-start,
+.nav-bottom-end {
+  width: 20%;
+}
+
+.nav-bottom-mid {
+  width: 60%;
+}
+
+.nav-bottom-mid ul {
+  height: 100%;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.nav-bottom-mid li {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+  width: 80px;
+  justify-content: center;
+}
+
+.desktop {
+  display: none;
+}
+
+.nav-bottom-mid li:hover {
+  border-bottom: 2px solid var(--color-dark-red);
+}
+
+@media screen and (min-width: 800px) {
+  .desktop {
+    display: flex;
   }
 }
