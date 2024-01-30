@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat&family=Noto+Sans+KR:wght@400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;600&display=swap");
+
+/* 사용법
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; 
+*/
 
 :root {
   --color-red: #ec1d23;
