@@ -18,7 +18,7 @@ body{
 }
 
 #main_img{
-  max-width: 800px;
+  width: 60%;
   height: 100%;
   margin: auto;
   display: flex;
