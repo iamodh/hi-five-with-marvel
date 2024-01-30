@@ -2,7 +2,7 @@
 const carousel = document.querySelector("#carousel"); // 캐러셀 영역
 const pics = ["avengers_endgame.png","spiderman.png","marvles.png","doctor.png"];  // 이미지 배열
 
-carousel.style.backgroundImage = `url(../images/hj/${pics[0]})`;  // 첫번째 이미지 기본으로 표시
+carousel.style.backgroundImage = `url(../../images/hj/${pics[0]})`;  // 첫번째 이미지 기본으로 표시
 
 const arrows = document.querySelectorAll(".arrow");  // 화살표
 carousel.style.backgroundRepeat = "no-repeat"
@@ -23,6 +23,6 @@ arrows.forEach( arrow => {
         i = 0;  // 첫번째 이미지로 이동
       }
     }
-    carousel.style.backgroundImage = `url(../images/hj/${pics[i]})`;  // 현재 이미지 표시
+    carousel.style.backgroundImage = `url(../../images/hj/${pics[i]})`;  // 현재 이미지 표시
   });
 });
