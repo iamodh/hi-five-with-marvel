@@ -1,5 +1,5 @@
-@import "reset.css";
-@import "var.css";
+@import "../reset.css";
+@import "../var.css";
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
 
@@ -8,17 +8,17 @@
   padding:0;
   box-sizing: border-box;
 }
-body{
-  max-width: 1300px;
+.maxwidth{
   margin: auto;
+  max-width: 1300px;
 }
 
 #main{
-  background-color: black;
+  background-color: var(--color-black);
 }
 
 #main_img{
-  width: 60%;
+  width: 50%;
   height: 100%;
   margin: auto;
   display: flex;
@@ -37,12 +37,12 @@ body{
   height: 8px;
 }
 #scroll::-webkit-scrollbar-thumb {
-  background-color: red;
+  background-color: var(--color-red);
 
 }
 #scroll::-webkit-scrollbar-track {
-  background-color: whitesmoke;
-  box-shadow: inset 0px 0px 5px white;
+  background-color: var(--color-grey);
+  box-shadow: inset 0px 0px 5px var(--color-light-grey);
 }
 
 .card{
@@ -73,18 +73,34 @@ body{
   height: 40px;
 }
 #title{
-  margin:8px 20px 0px;
-  height: 30px;
-  padding: 5px;
+  margin:15px 20px 10px;
+  max-width: 1300px;
+  height: 40px;
+  padding: 20px;
   font-family: 'Black Han Sans', sans-serif;
   font-size: x-large
+}
+
+#title::before {
+  left: 70px;
+}
+
+#title::before,
+#title::after {
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
 }
 a{
   text-decoration-line: none;
 }
 
 #gray{
-  color: gray;
+  color: var(--color-grey);
   font-size: small;
 }
 
@@ -95,12 +111,11 @@ a{
 #movie_title{
   padding: 20px;
   font-family: 'Black Han Sans', sans-serif;
-  font-size: xl-large
+  font-size: 40px;
 }
 
 #gallery{
   width: 82%;
-  margin-bottom: 30px;
   margin: auto;
   flex-wrap: wrap;
   display: flex;
@@ -109,4 +124,15 @@ a{
 .poster-img{
   width: 235px;
   margin:10px;
+}
+#bg-black{
+  background-color: var(--color-black);
+}
+
+#intro{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.white{
+  color: var(--color-white);
 }
