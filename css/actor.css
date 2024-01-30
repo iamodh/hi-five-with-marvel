@@ -1,6 +1,9 @@
 @import "reset.css";
 @import "var.css";
 
+body {
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -91,8 +94,8 @@ main {
   background-repeat: no-repeat;
   width: 80px;
   height: 80px;
-  position: absolute;
-  left: 0;
+  position: fixed;
+  animation: fly 10s linear infinite;
 }
 
 .fly.ironman {
@@ -106,4 +109,18 @@ main {
 }
 
 @keyframes fly {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: calc(100vh - 80px);
+    left: calc(100vw - 80px);
+  }
+  50% {
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
 }
