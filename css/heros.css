@@ -4,13 +4,44 @@
 main {
   display: flex;
   flex-direction: column;
+  font-family: "Noto Sans KR";
+  background-color: var(--color-white);
 }
 
 .title {
   font-size: 2rem;
-  padding: 10px;
-  padding-bottom: 0;
-  margin-bottom: 16px;
+  padding: 16px var(--margin-side);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-weight: bold;
+  position: relative;
+}
+
+.title::before {
+  left: 53px;
+}
+
+.title::before,
+.title::after {
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+.hero-info-container {
+  background-color: var(--color-black);
+  margin-bottom: 64px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-image {
+  align-self: center;
 }
 
 .background-image {
@@ -36,11 +67,25 @@ main {
   font-size: 1.5rem;
   padding-right: 0.5rem;
   font-weight: bold;
+  font-family: "Black Han Sans";
+  background-color: var(--color-red);
+  color: var(--color-white);
+  margin-left: var(--margin-side);
 }
 
 .hero-info {
+  padding-bottom: 8px;
+}
+
+.hero-desc {
   word-break: break-all;
-  margin-bottom: 16px;
+  color: var(--color-white);
+  line-height: 1.6;
+  margin: 0px var(--margin-side);
+}
+
+.actor-name {
+  font-family: "Black Han Sans";
 }
 
 .actor-image {
@@ -53,9 +98,13 @@ main {
 
 .actor-info-container {
   cursor: pointer;
-  border-bottom: 2px solid rgb(1, 1, 1, 0.2);
-  padding-bottom: 32px;
-  margin-bottom: 32px;
+  border: 2px solid var(--color-grey);
+  margin-bottom: 64px;
+  padding: 16px;
+  box-shadow: 0 8px 12px 1px rgba(1, 1, 1, 0.4);
+  margin-left: var(--margin-side);
+  margin-right: var(--margin-side);
+  max-width: 800px;
 }
 
 .actor-meta {
@@ -142,4 +191,16 @@ main {
 .actor-image.dr-strange {
   background-image: url("../images/dh/dr-strange/actor.jpeg");
   float: left;
+}
+
+@media screen and (min-width: 760px) {
+  .hero-info-container {
+    flex-direction: row;
+  }
+  .hero-info {
+    max-width: calc(100vw - 310px);
+  }
+  .background-image {
+    margin-left: var(--margin-side);
+  }
 }
