@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content {
+        position: relative;
+      }
+      .content::before,
+      .content::after {
+        content: "";
+        border-style: solid;
+        border-width: 0 0 16px 16px;
+        position: absolute;
+        border-bottom: 1px solid black;
+        transform: rotateZ(-35deg);
+      }
+      .content::before {
+        bottom: 100%;
+        transform-origin: left;
+      }
+      .content::after {
+        transform-origin: right;
+        top: 100%;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <span class="content"><span>ABAVDSARAADS</span></span>
+      </div>
+    </div>
+  </body>
+</html>

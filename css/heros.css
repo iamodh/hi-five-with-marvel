@@ -86,6 +86,7 @@ main {
 
 .actor-name {
   font-family: "Black Han Sans";
+  color: rgb(197, 57, 32);
 }
 
 .actor-image {
@@ -206,6 +207,9 @@ main {
 }
 
 /* Header */
+i {
+  color: white;
+}
 /* nav-top */
 .nav-top-conatiner {
   height: 52px;
@@ -236,8 +240,7 @@ main {
   display: flex;
   justify-content: center;
 }
-.nav-top-mid h1 {
-  padding: 3px;
+.nav-top-title {
   width: 103%;
   font-size: 35px;
   height: 100%;
@@ -265,11 +268,11 @@ main {
 
 .nav-bottom-start,
 .nav-bottom-end {
-  width: 20%;
+  width: 15%;
 }
 
 .nav-bottom-mid {
-  width: 60%;
+  width: 70%;
 }
 
 .nav-bottom-mid ul {
@@ -283,10 +286,10 @@ main {
 
 .nav-bottom-mid li {
   display: flex;
-  font-size: 0.8rem;
   align-items: center;
-  width: 80px;
+  width: 100px;
   justify-content: center;
+  color: rgba(150, 150, 150, 0.8);
 }
 
 .desktop {
@@ -295,10 +298,71 @@ main {
 
 .nav-bottom-mid li:hover {
   border-bottom: 2px solid var(--color-dark-red);
+  color: var(--color-white);
 }
 
+/* Responsive header */
 @media screen and (min-width: 800px) {
   .desktop {
+    display: block;
+  }
+  .nav-bottom-conatiner.desktop {
     display: flex;
+  }
+
+  /* Nav top */
+  .nav-top-container {
+    border-bottom: 2px solid rgb(150, 150, 150, 0.4);
+  }
+
+  .nav-top-start,
+  .nav-top-end {
+    width: 10%;
+  }
+
+  .nav-top-mid {
+    border-left: 2px solid rgb(150, 150, 150, 0.4);
+    border-right: 2px solid rgb(150, 150, 150, 0.4);
+    width: 15%;
+    width: 80%;
+  }
+
+  .nav-top-mid__start,
+  .nav-top-mid__mid,
+  .nav-top-mid__end {
+    display: flex;
+    align-items: center;
+  }
+  .nav-top-mid__start {
+    justify-content: flex-start;
+    border-right: 2px solid rgb(150, 150, 150, 0.4);
+    width: 20%;
+  }
+  .nav-top-mid__mid {
+    justify-content: center;
+    width: 60%;
+  }
+  .nav-top-mid__end {
+    justify-content: space-between;
+    border-left: 2px solid rgb(150, 150, 150, 0.4);
+    width: 20%;
+    display: flex;
+    color: var(--color-white);
+  }
+
+  .nav-top__subscribe {
+    font-family: "Black Han Sans";
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
+
+  .nav-top__search {
+    border-left: 2px solid rgb(150, 150, 150, 0.4);
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
