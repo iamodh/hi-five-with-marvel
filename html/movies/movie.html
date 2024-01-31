@@ -1,164 +1,240 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../../css/movie/movie.css">
-  <script
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/movie/movie.css" />
+    <script
       src="https://kit.fontawesome.com/fccb424d55.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
-  <header>
-    <div class="nav-top-container">
-      <div class="nav-top-start">
-        <a href=""><i class="fa-solid fa-bars fa-xl" style="color: white;"></i></a>
-      </div>
-      <div class="nav-top-mid">
-        <a href="../../index.html"><h1>MARVEL</h1></a>
-      </div>
-      <div class="nav-top-end">
-        <a href=""><i class="fas fa-magnifying-glass fa-xl" style="color: white;"></i></a>
-      </div>
-  </div>
-  <div class="nav-bottom-container desktop">
-    <div class="nav-bottom-start"></div>
-    <div class="nav-bottom-mid"></div>
-    <div class="nav-bottom-end"></div>
-  </div>
-  </header>
-  <div id="bg-black">
-    <div id="carousel">
-      <div class="arrow" id="left">&lang;</div>
-      <div class="arrow" id="right">&rang;</div>
+  </head>
+  <body>
+    <div class="nav-menu">
+      <button id="close">X</button>
+      <ul>
+        <li><span>MOVEIS</span><span class="menu-arrow">❯</span></li>
+        <li><span>HEROS</span><span class="menu-arrow">❯</span></li>
+        <li><span>GOODS</span><span class="menu-arrow">❯</span></li>
+      </ul>
     </div>
-  </div>
-  <div id="maxwidth">
-    <h1 id="title">영화 소개(인기 순)</h1>
-    <div id="scroll">
-      <a href="ironman.html">
-        <div class="card">
-          <img src="../../images/hj/ironman.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">아이언 맨</p> 
-          </div>
-        </div>
-      </a>
-      <a href="docter.html">
-        <div class="card">
-          <img src="../../images/hj/doctor.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">닥터 스트레인지</p> 
-          </div>
-        </div>
-      </a>
-      <a href="spiderman.html">
-        <div class="card">
-          <img src="../../images/hj/spiderman/spiderman2.jpg" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">스파이더 맨</p> 
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <img src="../../images/hj/avengers_endgame.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">어벤져스 엔드게임</p> 
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <img src="../../images/hj/marvles.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">더 마블즈</p> 
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <img src="../../images/hj/thor.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">토르</p> 
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <img src="../../images/hj/civilwar.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">시빌 워</p> 
-          </div>
-        </div>
-      </a>
+    <div class="nav-menu2">
+      <button id="close2"><</button>
+      <ul>
+        <li><span>IRONMAN</span></li>
+        <li><span>SPIDERMAN</span></li>
+        <li><span>DR.STRANGE</span></li>
+        <li><span>THOR</span></li>
+        <li><span>HULK</span></li>
+        <li><span>BLACKWIDOW</span></li>
+      </ul>
     </div>
-  </div>
-  <div id="maxwidth">
-    <h1 id="title">영화 소개(추천 순)</h1>
-    <div id="scroll">
-      <a href="">
-        <div class="card">
-          <img src="../../images/hj/civilwar.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">시빌 워</p> 
+    <header>
+      <div class="nav-top-container">
+        <div class="nav-top-start">
+          <button class="mobile" id="open"><i class="fa-solid fa-bars fa-xl"></i></button>
+          
+        </div>
+        <div class="nav-top-mid">
+          <div class="nav-top-mid__start desktop">
+            <i class="fa-solid fa-globe"></i>
+            <a class="login"></a>LOGIN<span>|</span><a class="join">JOIN</a>
+          </div>
+          <div class="nav-top-mid__mid">
+            <a href="../../index.html"
+              ><span class="nav-top-title">MARVEL</span></a
+            >
+          </div>
+          <div class="nav-top-mid__end desktop">
+            <div class="nav-top__subscribe">
+              <span>UNLIMITED </span><span>SUBSCRIBE</span>
+            </div>
+            <div class="nav-top__search">
+              <button>
+                <i class="fas fa-magnifying-glass fa-xl"></i>
+              </button>
+            </div>
           </div>
         </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <img src="../../images/hj/thor.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">토르</p> 
-          </div>
+        <div class="nav-top-end">
+          <button class="mobile">
+            <i class="fas fa-magnifying-glass fa-xl"></i>
+          </button>
         </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <img src="../../images/hj/avengers_endgame.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">어벤져스 엔드게임</p> 
-          </div>
+      </div>
+      <div class="nav-bottom-conatiner desktop">
+        <div class="nav-bottom-start"></div>
+        <div class="nav-bottom-mid">
+          <ul>
+            <li>NEWS</li>
+            <li>COMICS</li>
+            <li>CHARACTERS</li>
+            <li>MOVIES</li>
+            <li>TV SHOWS</li>
+            <li>GAMES</li>
+            <li>VIDEOS</li>
+            <li>MORE</li>
+          </ul>
         </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <img src="../../images/hj/marvles.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">더 마블즈</p> 
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <img src="../../images/hj/spiderman.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">어메이징 스파이더 맨</p> 
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <img src="../../images/hj/doctor.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">닥터 스트레인지</p> 
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <img src="../../images/hj/ironman.png" class="card-img" alt="...">
-          <div class="card-body">
-            <p class="card-title">아이언 맨</p> 
-          </div>
-        </div>
-      </a>
+        <div class="nav-bottom-end"></div>
+      </div>
+    </header>
+    <div id="bg-black">
+      <div id="carousel">
+        <div class="arrow" id="left">&lang;</div>
+        <div class="arrow" id="right">&rang;</div>
+      </div>
     </div>
-  </div>
+    <div id="maxwidth">
+      <h1 id="title">영화 소개(인기 순)</h1>
+      <div id="scroll">
+        <a href="ironman.html">
+          <div class="card">
+            <img src="../../images/hj/ironman.png" class="card-img" alt="..." />
+            <div class="card-body">
+              <p class="card-title">아이언 맨</p>
+            </div>
+          </div>
+        </a>
+        <a href="docter.html">
+          <div class="card">
+            <img src="../../images/hj/doctor.png" class="card-img" alt="..." />
+            <div class="card-body">
+              <p class="card-title">닥터 스트레인지</p>
+            </div>
+          </div>
+        </a>
+        <a href="spiderman.html">
+          <div class="card">
+            <img
+              src="../../images/hj/spiderman/spiderman2.jpg"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-title">스파이더 맨</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <img
+              src="../../images/hj/avengers_endgame.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-title">어벤져스 엔드게임</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <img src="../../images/hj/marvles.png" class="card-img" alt="..." />
+            <div class="card-body">
+              <p class="card-title">더 마블즈</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <img src="../../images/hj/thor.png" class="card-img" alt="..." />
+            <div class="card-body">
+              <p class="card-title">토르</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <img
+              src="../../images/hj/civilwar.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-title">시빌 워</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="maxwidth">
+      <h1 id="title">영화 소개(추천 순)</h1>
+      <div id="scroll">
+        <a href="">
+          <div class="card">
+            <img
+              src="../../images/hj/civilwar.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-title">시빌 워</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <img src="../../images/hj/thor.png" class="card-img" alt="..." />
+            <div class="card-body">
+              <p class="card-title">토르</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <img
+              src="../../images/hj/avengers_endgame.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-title">어벤져스 엔드게임</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <img src="../../images/hj/marvles.png" class="card-img" alt="..." />
+            <div class="card-body">
+              <p class="card-title">더 마블즈</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <img
+              src="../../images/hj/spiderman.png"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="card-title">어메이징 스파이더 맨</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <img src="../../images/hj/doctor.png" class="card-img" alt="..." />
+            <div class="card-body">
+              <p class="card-title">닥터 스트레인지</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <img src="../../images/hj/ironman.png" class="card-img" alt="..." />
+            <div class="card-body">
+              <p class="card-title">아이언 맨</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
 
-  <script src="../../js/movie/movie.js"></script>
-</body>
+    <script src="../../js/movie/movie.js"></script>
+    <script src="../../js/components/header.js"></script>
+  </body>
 </html>

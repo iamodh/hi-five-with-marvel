@@ -1,6 +1,6 @@
 @import "reset.css";
 @import "var.css";
-@import "../css/component/header.css";
+@import "../css/components/header.css";
 main {
   display: flex;
   flex-direction: column;
@@ -75,6 +75,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Roboto Mono", monospace;
 }
 
 .hero-desc {
@@ -95,6 +96,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-right: 8px;
 }
 
 .actor-info-container {
@@ -113,6 +115,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-right: 8px;
 }
 
 .actor-name {
@@ -122,8 +125,9 @@ main {
 }
 
 .actor-info {
+  font-size: 0.8rem;
   text-align: center;
-  color: rgb(1,1,1,0.6);
+  color: rgb(1, 1, 1, 0.6);
 }
 
 .hidden {
@@ -203,6 +207,11 @@ main {
   .hero-info {
     max-width: calc(100% - 310px);
   }
+
+  .actor-info {
+    font-size: 1rem;
+  }
+
   .background-image {
     margin-left: var(--margin-side);
   }
