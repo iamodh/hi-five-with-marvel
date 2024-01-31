@@ -90,6 +90,7 @@
   padding: 5px;
   font-family: "Black Han Sans", sans-serif;
   font-size: x-large;
+  position: relative;
 }
 #title::before {
   left: 53px;

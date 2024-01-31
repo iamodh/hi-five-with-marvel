@@ -9,12 +9,14 @@ main {
   flex-direction: column;
   background-color: var(--color-black);
   color: var(--color-white);
+  font-family: "Noto Sans KR";
 }
 
 .title {
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 2rem;
   padding: 16px var(--margin-side);
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .title::before {
@@ -150,6 +152,8 @@ main {
   box-shadow: inset 0px 0px 5px var(--color-light-grey);
 }
 
+/* Flying hero */
+
 .fly {
   background-size: contain;
   background-position: center;
@@ -157,7 +161,8 @@ main {
   width: 80px;
   height: 80px;
   position: fixed;
-  animation: fly 10s linear infinite;
+  left: calc(50vw - 40px);
+  top: calc(50vw - 40px);
 }
 
 .fly.ironman {
@@ -170,22 +175,6 @@ main {
   background-image: url("../../images/dh/dr-strange/fly.png");
 }
 
-@keyframes fly {
-  0% {
-    top: 0;
-    left: 0;
-  }
-  25% {
-    top: calc(100vh - 80px);
-    left: calc(100vw - 80px);
-  }
-  50% {
-  }
-  100% {
-    top: 0;
-    left: 0;
-  }
-}
 @media screen and (min-width: 800px) {
   .info {
     font-size: 1.2rem;
