@@ -6,7 +6,8 @@ hasAnimationPlayed.fill(false);
 
 window.onscroll = () => {
   for (let i = 0; i < heroContainers.length; i++) {
-    if (heroContainers[i].offsetTop - window.scrollY < 32) {
+    console.log(`${i}: ${heroContainers[i].offsetTop - window.scrollY}`);
+    if (heroContainers[i].offsetTop - window.scrollY < 256) {
       hasAnimationPlayed[i] = true;
     }
   }

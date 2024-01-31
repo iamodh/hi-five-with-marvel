@@ -1,5 +1,5 @@
-@import "reset.css";
-@import "var.css";
+@import "../reset.css";
+@import "../var.css";
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
 
@@ -8,25 +8,22 @@
   padding:0;
   box-sizing: border-box;
 }
-body{
-  max-width: 1300px;
-  margin: auto;
-}
+
 
 #carousel{
-  width:100%;
+  margin: auto;
+  max-width:1300px;
   height: 0;
-  padding-top: 61.8%;
+  padding-top: 55.8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .arrow {
-  margin-bottom: 70%;
-  padding: 2px;
+  margin-bottom: 65%;
   z-index:100;
-  font-size:2em;
+  font-size:8em;
   color:#222;
   opacity:0.2;
 }
@@ -38,7 +35,10 @@ body{
 #title{
   margin:0px 20px 10px;
 }
-
+#maxwidth{
+  max-width: 1300px;
+  margin:auto
+}
 #scroll {
   width: 98%;
   height: 260px;
@@ -52,13 +52,11 @@ body{
   height: 8px;
 }
 #scroll::-webkit-scrollbar-thumb {
-  background-color: #2f3542;
-  border-radius: 10px;
+  background-color: var(--color-red);
 }
 #scroll::-webkit-scrollbar-track {
-  background-color: whitesmoke;
-  border-radius: 10px;
-  box-shadow: inset 0px 0px 5px white;
+  background-color: var(--color-grey);
+  box-shadow: inset 0px 0px 5px var(--color-light-grey);
 }
 
 .card{
@@ -91,8 +89,86 @@ body{
 
 #title{
   height: 30px;
-  margin: 5px;
+  margin: 15px;
   padding: 5px;
   font-family: 'Black Han Sans', sans-serif;
   font-size: x-large
+}
+#title::before {
+  left: 53px;
+}
+
+#title::before,
+#title::after {
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+#bg-black{
+  background-color: var(--color-black);
+  max-height: 730px;
+}
+
+
+/* Header */
+.nav-top-container {
+  height: 52px;
+  background-color: var(--color-black);
+}
+
+.nav-bottom-container {
+  height: 40px;
+}
+.desktop {
+  display: none;
+}
+
+.nav-top-container{
+  display: flex;
+}
+
+.nav-top-start{
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+.nav-top-start a {
+  display: flex;
+  align-items: center;
+}
+
+.nav-top-mid{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.nav-top-mid h1{
+  padding: 3px;
+  width: 103%;
+  font-size: 35px;
+  height: 100%;
+  color: var(--color-white);
+  font-family: 'Black Han Sans', sans-serif;
+  background-color: var(--color-red);
+}
+.nav-top-end{
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.nav-top-end a{
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .desktop {
+    display: block;
+  }
 }

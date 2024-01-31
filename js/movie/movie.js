@@ -5,8 +5,8 @@ const pics = ["avengers_endgame.png","spiderman.png","marvles.png","doctor.png"]
 carousel.style.backgroundImage = `url(../../images/hj/${pics[0]})`;  // 첫번째 이미지 기본으로 표시
 
 const arrows = document.querySelectorAll(".arrow");  // 화살표
-carousel.style.backgroundRepeat = "no-repeat"
-carousel.style.backgroundSize = "100%"
+carousel.style.backgroundRepeat = "no-repeat";
+carousel.style.backgroundSize = "100%";
 let i = 0;  // 배열 인덱스
 
 arrows.forEach( arrow => {
