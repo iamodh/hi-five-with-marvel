@@ -14,12 +14,13 @@
     <header>
       <div class="nav-top-container">
         <div class="nav-top-start">
-          <a href=""
-            ><i class="fa-solid fa-bars fa-xl" style="color: white"></i
-          ></a>
+          <button class="mobile"><i class="fa-solid fa-bars fa-xl"></i></button>
         </div>
         <div class="nav-top-mid">
-          <div class="nav-top-mid__start desktop"></div>
+          <div class="nav-top-mid__start desktop">
+            <i class="fa-solid fa-globe"></i>
+            <a class="login"></a>LOGIN<span>|</span><a class="join">JOIN</a>
+          </div>
           <div class="nav-top-mid__mid">
             <a href="../../index.html"
               ><span class="nav-top-title">MARVEL</span></a
@@ -27,15 +28,19 @@
           </div>
           <div class="nav-top-mid__end desktop">
             <div class="nav-top__subscribe">
-              <span>MARVEL UNLIMITED </span><span>SUBSCRIBE</span>
+              <span>UNLIMITED </span><span>SUBSCRIBE</span>
             </div>
             <div class="nav-top__search">
-              <i class="fas fa-magnifying-glass fa-xl"></i>
+              <button>
+                <i class="fas fa-magnifying-glass fa-xl"></i>
+              </button>
             </div>
           </div>
         </div>
         <div class="nav-top-end">
-          <a href=""><i class="fas fa-magnifying-glass fa-xl"></i></a>
+          <button class="mobile">
+            <i class="fas fa-magnifying-glass fa-xl"></i>
+          </button>
         </div>
       </div>
       <div class="nav-bottom-conatiner desktop">
@@ -148,5 +153,6 @@
     </main>
     <footer></footer>
     <script src="../js/heros.js"></script>
+    <script src="../js/components/header.js"></script>
   </body>
 </html>
