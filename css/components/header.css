@@ -204,3 +204,102 @@ i {
     height: 52px;
   }
 }
+
+/*nav-menu*/
+.nav-menu{
+  z-index: 101;
+  position: fixed;
+  background-color: var(--color-black);
+  width: 100vw;
+  height: 100%;
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu button,
+.nav-menu2 button{
+  width: 36px;
+  height: 36px;
+  font-size: 1.8rem;
+  border: none;
+  background-color: var(--color-dark-red);
+  border-radius: 8px;
+  color: var(--color-white);
+  margin: 24px;
+}
+
+.nav-menu ul li,
+.nav-menu2 ul li {
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 24px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-arrow {
+  color: var(--color-red);
+}
+
+.nav-menu2{
+  z-index: 102;
+  position: fixed;
+  background-color: var(--color-black);
+  width: 100vw;
+  height: 100%;
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.active{
+  animation: slideIn 0.5s ease-in forwards;
+}
+@keyframes slideIn {
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+.inactive{
+  animation: slideOut 0.5s ease-out forwards;
+}
+@keyframes slideOut{
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+.active2{
+  animation: slideIn2 0.5s ease-in forwards;
+}
+@keyframes slideIn2 {
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
+.inactive2{
+  animation: slideOut2 0.5s ease-out forwards;
+}
+@keyframes slideOut2{
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(100%);
+  }
+}
