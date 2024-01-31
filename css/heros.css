@@ -117,10 +117,12 @@ main {
 .actor-name {
   font-size: 1.2rem;
   text-align: center;
+  color: rgb(197, 57, 32);
 }
 
 .actor-info {
   text-align: center;
+  color: rgb(1,1,1,0.6);
 }
 
 .hidden {
