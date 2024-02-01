@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/heros.css" />
     <link rel="stylesheet" href="../../css/components/header.css" />
-    <link rel="stylesheet" href="../../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
     <script
       src="https://kit.fontawesome.com/fccb424d55.js"
       crossorigin="anonymous"
@@ -13,10 +13,46 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="nav-menu">
+      <button id="close">X</button>
+      <ul>
+        <li>
+          <span><a href="./movies/movie.html">MOVIES</a></span
+          ><span class="menu-arrow">❯</span>
+        </li>
+        <li>
+          <span><a href="./heros.html">HEROS</a></span
+          ><span class="menu-arrow">❯</span>
+        </li>
+        <li>
+          <span><a href="./goods.html">GOODS</a></span
+          ><span class="menu-arrow">❯</span>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-menu2">
+      <button id="close2"><</button>
+      <ul>
+        <li>
+          <span><a href="./movies/ironman.html">IRONMAN</a></span>
+        </li>
+        <li>
+          <span><a href="./movies/spiderman.html">SPIDERMAN</a></span>
+        </li>
+        <li>
+          <span><a href="./movies/doctor.html">DR.STRANGE</a></span>
+        </li>
+        <li><span>THOR</span></li>
+        <li><span>HULK</span></li>
+        <li><span>BLACKWIDOW</span></li>
+      </ul>
+    </div>
     <header>
       <div class="nav-top-container">
         <div class="nav-top-start">
-          <button class="mobile"><i class="fa-solid fa-bars fa-xl"></i></button>
+          <button class="mobile" id="open">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </button>
         </div>
         <div class="nav-top-mid">
           <div class="nav-top-mid__start desktop">
@@ -49,9 +85,9 @@
         <div class="nav-bottom-start"></div>
         <div class="nav-bottom-mid">
           <ul>
-            <a href="/html/movies/movie.html"><li>MOVIES</li></a>
-            <a href="/html/heros.html"><li>HEROS</li></a>
-            <a href="/html/goods.html"><li>GOODS</li></a>
+            <a href="./movies/movie.html"><li>MOVIES</li></a>
+            <a href="./heros.html"><li>HEROS</li></a>
+            <a href="./goods.html"><li>GOODS</li></a>
             <a href="#"><li>NEWS</li></a>
             <a href="#"><li>TV SHOWS</li></a>
             <a href="#"><li>GAMES</li></a>
