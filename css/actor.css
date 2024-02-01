@@ -2,6 +2,7 @@
 @import "var.css";
 
 main {
+  padding-top: 52px;
   display: flex;
   flex-direction: column;
   background-color: var(--color-black);
@@ -98,6 +99,7 @@ main {
   padding-top: 64px;
   display: flex;
   overflow-x: scroll;
+  margin-bottom: 64px;
 }
 
 .work {
@@ -160,6 +162,7 @@ main {
   position: fixed;
   left: calc(50vw - 40px);
   top: calc(50vw - 40px);
+  z-index: 200;
 }
 
 .fly.ironman {
@@ -175,5 +178,9 @@ main {
 @media screen and (min-width: 800px) {
   .info {
     font-size: 1.2rem;
+  }
+
+  main {
+    padding-top: 92px;
   }
 }

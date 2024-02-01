@@ -124,7 +124,7 @@ i {
     width: 10%;
   }
   .nav-top-start i,
-  .nav-top-end i{
+  .nav-top-end i {
     color: var(--color-white);
   }
 
@@ -216,7 +216,7 @@ i {
 }
 
 /*nav-menu*/
-.nav-menu{
+.nav-menu {
   z-index: 101;
   position: fixed;
   background-color: var(--color-black);
@@ -228,7 +228,7 @@ i {
 }
 
 .nav-menu button,
-.nav-menu2 button{
+.nav-menu2 button {
   width: 36px;
   height: 36px;
   font-size: 1.8rem;
@@ -244,7 +244,6 @@ i {
   color: var(--color-white);
   display: flex;
   justify-content: space-between;
-  width: 100%;
   padding: 0px 24px;
   margin-bottom: 10px;
   font-size: 1.5rem;
@@ -255,7 +254,7 @@ i {
   color: var(--color-red);
 }
 
-.nav-menu2{
+.nav-menu2 {
   z-index: 102;
   position: fixed;
   background-color: var(--color-black);
@@ -266,78 +265,76 @@ i {
   flex-direction: column;
 }
 
-
-
-.active{
+.active {
   animation: slideIn 0.5s ease-in forwards;
 }
 @keyframes slideIn {
-  from{
+  from {
     transform: translateX(-100%);
   }
-  to{
+  to {
     transform: translateX(0%);
   }
 }
-.inactive{
+.inactive {
   animation: slideOut 0.5s ease-out forwards;
 }
-@keyframes slideOut{
-  from{
+@keyframes slideOut {
+  from {
     transform: translateX(0%);
   }
-  to{
+  to {
     transform: translateX(-100%);
   }
 }
 
-.active2{
+.active2 {
   animation: slideIn2 0.5s ease-in forwards;
 }
 @keyframes slideIn2 {
-  from{
+  from {
     transform: translateX(110%);
   }
-  to{
+  to {
     transform: translateX(0%);
   }
 }
-.inactive2{
+.inactive2 {
   animation: slideOut2 0.5s ease-out forwards;
 }
-@keyframes slideOut2{
-  from{
+@keyframes slideOut2 {
+  from {
     transform: translateX(0%);
   }
-  to{
+  to {
     transform: translateX(110%);
   }
 }
 
 /* Header Animation */
 
-.headerActive{
+.headerActive {
   animation: headerDown 0.3s ease-out forwards;
 }
 
 @keyframes headerDown {
-  from{
+  from {
     transform: translateY(-100%);
   }
-  to{
+  to {
     transform: translateY(0%);
   }
 }
 
-.headerInactive{
+.headerInactive {
   animation: headerUp 0.3s ease-out forwards;
 }
 
 @keyframes headerUp {
-  from{
+  from {
     transform: translateY(0%);
   }
-  to{
+  to {
     transform: translateY(-100%);
   }
 }

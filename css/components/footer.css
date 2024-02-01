@@ -6,10 +6,16 @@
   padding-bottom: 0;
   background-color: var(--color-black);
   color: var(--color-white);
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   border: none;
 }
-#section1, #section2, #section3 {
+a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+#section1,
+#section2,
+#section3 {
   margin-bottom: 1rem;
   border-bottom: 1px solid #ddd;
   padding-bottom: 16px;
@@ -19,30 +25,34 @@
   display: flex;
   justify-content: flex-start;
 }
-#section1 span, #section1 a {
+#section1 span,
+#section1 a {
   margin-right: var(--margin-side);
 }
 #section1 span {
   padding: 0.5rem;
   font-size: 4em;
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Black Han Sans", sans-serif;
   background-color: var(--color-red);
 }
 #section1 a {
   font-size: xx-small;
   margin-left: var(--margin-side);
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Black Han Sans", sans-serif;
   line-height: 1rem;
 }
 /* section2 */
-#first, #second {
+#first,
+#second {
   line-height: 1.2rem;
   font-size: small;
 }
-#first h4, #second h4 {
-  font-family: 'Black Han Sans', sans-serif;
+#first h4,
+#second h4 {
+  font-family: "Black Han Sans", sans-serif;
 }
-#first p, #second p {
+#first p,
+#second p {
   font-size: smaller;
   color: var(--color-grey);
 }
@@ -58,13 +68,14 @@
 #sectionwrap2 i {
   color: springgreen;
 }
-#sectionwrap1 div, #sectionwrap2 div {
+#sectionwrap1 div,
+#sectionwrap2 div {
   padding-right: 1rem;
 }
 /* section3 */
 #section3 h4 {
   font-size: small;
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: "Black Han Sans", sans-serif;
   margin-bottom: 1rem;
 }
 #section3 ul {
@@ -73,7 +84,6 @@
   margin-bottom: 1rem;
   margin-left: var(--margin-side);
   margin-right: var(--margin-side);
-
 }
 /* section4 */
 #section4 {
@@ -86,13 +96,15 @@
   color: var(--color-white);
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width: 800px) {
   .footer-container {
     justify-content: space-around;
     flex-direction: row;
   }
-  #section1, #section2, #section3 {
-    border-bottom: none
+  #section1,
+  #section2,
+  #section3 {
+    border-bottom: none;
   }
   #section3 ul {
     margin: 0;
