@@ -1,6 +1,7 @@
 @import "../reset.css";
 @import "../var.css";
 @import "../components/header.css";
+@import "../components/footer.css";
 
 * {
   margin: 0;
@@ -10,6 +11,10 @@
 .maxwidth {
   margin: auto;
   max-width: 1300px;
+}
+main {
+  padding-top: 52px;
+  margin-bottom: 64px;
 }
 
 #main {

@@ -104,16 +104,11 @@ i {
 @media screen and (min-width: 800px) {
   .nav-top-start button,
   .nav-top-end button {
-    display: none;
+    display: none;                   
   }
-
-  .desktop {
-    display: block;
-  }
-  .nav-bottom-conatiner.desktop {
+  .desktop{
     display: flex;
   }
-
   /* Nav top */
   .nav-top-container {
     border-bottom: 2px solid rgb(150, 150, 150, 0.4);
@@ -315,6 +310,7 @@ i {
 }
 
 /* Header Animation */
+
 
 .headerActive{
   animation: headerDown 0.3s ease-out forwards;
