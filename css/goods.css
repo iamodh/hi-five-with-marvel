@@ -15,7 +15,7 @@
 }
 main {
   display: flex;
-  padding-top 52px;
+  padding-top: 52px;
   flex-direction: column;
 }
 #event {
