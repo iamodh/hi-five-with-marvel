@@ -1,9 +1,6 @@
 @import "reset.css";
 @import "var.css";
 
-body {
-}
-
 main {
   display: flex;
   flex-direction: column;
