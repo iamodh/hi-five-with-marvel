@@ -47,3 +47,36 @@ close2.addEventListener("click",slideOut2)
 open2.forEach((arrow)=>{
   arrow.addEventListener("click",slideIn2);
 })
+
+/* Header animation*/
+const header = document.body.querySelector("header");
+const main = document.querySelector("main");
+const headerTitle = document.querySelector(".nav-top-title");
+
+let lastScroll =  0;
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const scrollUp = scrollY < lastScroll;
+
+  if (scrollY > 52) {
+    if (scrollUp) {
+      header.classList.add("headerActive");
+      header.classList.remove("headerInactive");
+    } else {
+      header.classList.remove("headerActive");
+      header.classList.add("headerInactive");
+      headerTitle.innerText = "M"
+    }
+  } else {
+    header.classList.remove("fixed");
+    header.classList.remove("headerActive");
+    header.classList.remove("headerInactive");
+  }
+
+  if (scrollY === 0) {
+    
+    headerTitle.innerText = "MARVEL"
+  }
+  
+  lastScroll = scrollY
+})
