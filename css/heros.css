@@ -3,6 +3,7 @@
 @import "../css/components/header.css";
 
 main {
+  padding-top: 52px;
   display: flex;
   flex-direction: column;
   font-family: "Noto Sans KR";
@@ -219,5 +220,8 @@ header a {
 
   .background-image {
     margin-left: var(--margin-side);
+  }
+  main {
+    padding-top: 92px;
   }
 }

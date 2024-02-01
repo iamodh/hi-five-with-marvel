@@ -1,0 +1,20 @@
+@import "reset.css";
+@import "var.css";
+
+main {
+  padding-top: 52px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  height: 600px;
+  background-color: forestgreen;
+  border: 4px solid blue;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    padding-top: 92px;
+  }
+}
