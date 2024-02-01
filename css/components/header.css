@@ -85,7 +85,7 @@ i {
   justify-content: space-evenly;
 }
 
-.nav-bottom-mid li {
+.nav-bottom-mid a {
   display: flex;
   align-items: center;
   width: 100px;
@@ -96,7 +96,7 @@ i {
   display: none;
 }
 
-.nav-bottom-mid li:hover {
+.nav-bottom-mid a:hover {
   border-bottom: 2px solid var(--color-dark-red);
 }
 
@@ -239,7 +239,6 @@ i {
   color: var(--color-white);
   display: flex;
   justify-content: space-between;
-  width: 100%;
   padding: 0px 24px;
   margin-bottom: 10px;
   font-size: 1.5rem;

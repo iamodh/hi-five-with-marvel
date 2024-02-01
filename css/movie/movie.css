@@ -116,3 +116,9 @@ main {
   background-color: var(--color-black);
   max-height: 730px;
 }
+
+@media screen and (min-width: 800px) {
+  main {
+    padding-top: 92px;
+  }
+}

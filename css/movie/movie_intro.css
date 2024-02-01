@@ -141,3 +141,9 @@ a {
 .white {
   color: var(--color-white);
 }
+
+@media screen and (min-width: 800px) {
+  main {
+    padding-top: 92px;
+  }
+}
