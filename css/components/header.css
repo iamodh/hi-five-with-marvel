@@ -106,14 +106,9 @@ i {
   .nav-top-end button {
     display: none;
   }
-
   .desktop {
-    display: block;
-  }
-  .nav-bottom-conatiner.desktop {
     display: flex;
   }
-
   /* Nav top */
   .nav-top-container {
     border-bottom: 2px solid rgb(150, 150, 150, 0.4);
@@ -244,6 +239,7 @@ i {
   color: var(--color-white);
   display: flex;
   justify-content: space-between;
+  width: 100%;
   padding: 0px 24px;
   margin-bottom: 10px;
   font-size: 1.5rem;
