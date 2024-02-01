@@ -1,8 +1,7 @@
-@import "reset.css";
-@import "var.css";
-
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+@import "../reset.css";
+@import "../var.css";
+@import "../components/header.css";
+@import "../components/footer.css";
 
 @font-face {
   font-family: 'GmarketSansMedium';
@@ -12,10 +11,13 @@
 }
 
 body {
-  background-color: #222;
+  background-color: var(--color-black);
+}
+main {
+  padding-top: 52px;
+  margin: 0 var(--margin-side);
 }
 #tab {
-  position: fixed;
   top:0;
   left:0;
   width: 100%;
@@ -56,12 +58,10 @@ body {
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
 }
-#contents {
-  margin-top: 350px;
-}
 #contents-box {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 #contents-box .info {
   font-size: small;
@@ -103,6 +103,9 @@ body {
 }
 
 @media screen and (min-width:800px) {
+  main {
+    padding-top: 92px;
+  }
   #contents-box .info {
     font-size: medium;
   }

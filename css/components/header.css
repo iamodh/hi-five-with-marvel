@@ -239,7 +239,6 @@ i {
   color: var(--color-white);
   display: flex;
   justify-content: space-between;
-  width: 100%;
   padding: 0px 24px;
   margin-bottom: 10px;
   font-size: 1.5rem;
