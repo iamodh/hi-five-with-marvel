@@ -113,72 +113,22 @@ arrows.forEach((arrow) => {
 });
 
 /* 박주희 */
-const colBox01 = document.querySelector(".collection-box01");
-console.log(colBox01);
 
-colBox01.addEventListener("mouseover", (e) => {
-  colBox01.style.backgroundImage = 'url("../images/jh/index/background.png")';
-  colBox01.style.backgroundSize = "cover";
-  colBox01.style.backgroundPosition = "center";
-  colBox01.style.backgroundRepeat = "no-repeat";
-});
+const colBoxes = document.querySelectorAll(".collection-box");
 
-colBox01.addEventListener("mouseout", (e) => {
-  colBox01.style.backgroundImage = "none";
-});
-// ------- //
-const colBox02 = document.querySelector(".collection-box02");
-console.log(colBox02);
+const addBackground = (event) => {
+  event.target.style.backgroundImage =
+    'url("./images/jh/index/background.png")';
+  event.target.style.backgroundSize = "cover";
+  event.target.style.backgroundPosition = "center";
+  event.target.style.backgroundRepeat = "no-repeat";
+};
 
-colBox02.addEventListener("mouseover", (e) => {
-  colBox02.style.backgroundImage = 'url("../images/jh/index/background.png")';
-  colBox02.style.backgroundSize = "cover";
-  colBox02.style.backgroundPosition = "center";
-  colBox02.style.backgroundRepeat = "no-repeat";
-});
+const removeBackground = (event) => {
+  event.target.style.backgroundImage = "none";
+};
 
-colBox02.addEventListener("mouseout", (e) => {
-  colBox02.style.backgroundImage = "none";
-});
-// ------- //
-const colBox03 = document.querySelector(".collection-box03");
-console.log(colBox03);
-
-colBox03.addEventListener("mouseover", (e) => {
-  colBox03.style.backgroundImage = 'url("../images/jh/index/background.png")';
-  colBox03.style.backgroundSize = "cover";
-  colBox03.style.backgroundPosition = "center";
-  colBox03.style.backgroundRepeat = "no-repeat";
-});
-
-colBox03.addEventListener("mouseout", (e) => {
-  colBox03.style.backgroundImage = "none";
-});
-// ------- //
-const colBox04 = document.querySelector(".collection-box04");
-console.log(colBox04);
-
-colBox04.addEventListener("mouseover", (e) => {
-  colBox04.style.backgroundImage = 'url("../images/jh/index/background.png")';
-  colBox04.style.backgroundSize = "cover";
-  colBox04.style.backgroundPosition = "center";
-  colBox04.style.backgroundRepeat = "no-repeat";
-});
-
-colBox04.addEventListener("mouseout", (e) => {
-  colBox04.style.backgroundImage = "none";
-});
-// ------- //
-const colBox05 = document.querySelector(".collection-box05");
-console.log(colBox05);
-
-colBox05.addEventListener("mouseover", (e) => {
-  colBox05.style.backgroundImage = 'url("./images/jh/index/background.png")';
-  colBox05.style.backgroundSize = "cover";
-  colBox05.style.backgroundPosition = "center";
-  colBox05.style.backgroundRepeat = "no-repeat";
-});
-
-colBox05.addEventListener("mouseout", (e) => {
-  colBox05.style.backgroundImage = "none";
+colBoxes.forEach((box) => {
+  box.addEventListener("mouseover", addBackground);
+  box.addEventListener("mouseout", removeBackground);
 });
