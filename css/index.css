@@ -8,9 +8,6 @@ main {
 }
 
 .container {
-  height: 500px;
-  background-color: forestgreen;
-  border: 4px solid blue;
 }
 
 @media screen and (min-width: 800px) {
@@ -26,6 +23,8 @@ main {
 }
 
 .dh {
+  background-color: var(--color-black);
+  height: 500px;
   display: flex;
   justify-content: center;
 }
@@ -267,5 +266,154 @@ main {
 
   .heros-container.desktop {
     display: flex;
+  }
+}
+
+/*PHJ css*/
+h1,
+#left,
+#right {
+  color: var(--color-white);
+}
+
+.hj {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-black);
+  align-items: center;
+}
+
+#carousel-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 7.5;
+  background-color: var(--color-black);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  font-size: 2rem;
+  transform: translateY(-50%);
+}
+
+#left {
+  top: 50%;
+  left: 20px;
+}
+
+#right {
+  top: 50%;
+  right: 20px;
+}
+
+#carousel {
+  width: 80%;
+  max-width: 1000px;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+}
+#mvtitle {
+  margin: 15px 20px 10px;
+  max-width: 1300px;
+  height: 40px;
+  padding: 20px;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: x-large;
+  position: relative;
+}
+
+#mvtitle::before {
+  left: 100px;
+  top: 17px;
+}
+#mvtitle::after {
+  left: 68px;
+}
+
+#mvtitle::before,
+#mvtitle::after {
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+/* 박주희 */
+.container-jh {
+  background-color: var(--color-white);
+}
+.container-jh h1 {
+  margin-top: 1rem;
+  display: block;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: larger;
+  color: black;
+  text-align: center;
+}
+.collection {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.collection-box {
+  background-image: url(../images/jh/index/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.captin:last-child,
+.doctor:last-child,
+.iron:last-child,
+.thor:last-child,
+.spider:last-child {
+  display: none;
+}
+
+.collection p {
+  font-family: "Black Han Sans", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    padding-top: 92px;
+  }
+  .container-jh h1 {
+    font-size: x-large;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .captin,
+  .thor {
+    display: none;
+  }
+  #captin01,
+  #thor01 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .collection {
+    flex-direction: column;
   }
 }
