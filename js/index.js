@@ -173,7 +173,7 @@ const colBox05 = document.querySelector(".collection-box05");
 console.log(colBox05);
 
 colBox05.addEventListener("mouseover", (e) => {
-  colBox05.style.backgroundImage = 'url("../images/jh/index/background.png")';
+  colBox05.style.backgroundImage = 'url("./images/jh/index/background.png")';
   colBox05.style.backgroundSize = "cover";
   colBox05.style.backgroundPosition = "center";
   colBox05.style.backgroundRepeat = "no-repeat";
