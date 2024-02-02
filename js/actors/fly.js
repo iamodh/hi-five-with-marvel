@@ -28,11 +28,11 @@ setInterval(() => {
   if (isHeroCaught) {
     pause = true;
     if (hero.classList.contains("ironman")) {
-      hero.style.backgroundImage = "url('../../images/dh/ironman/fly2.png')";
+      hero.style.backgroundImage = "url('../images/dh/ironman/fly2.png')";
     } else if (hero.classList.contains("spiderman")) {
-      hero.style.backgroundImage = "url('../../images/dh/spiderman/fly2.png')";
+      hero.style.backgroundImage = "url('../images/dh/spiderman/fly2.png')";
     } else if (hero.classList.contains("dr-strange")) {
-      hero.style.backgroundImage = "url('../../images/dh/dr-strange/fly2.png')";
+      hero.style.backgroundImage = "url('../images/dh/dr-strange/fly2.png')";
     }
   }
 }, 1000 / FPS);
@@ -66,10 +66,10 @@ hero.addEventListener("mouseout", () => {
   isHeroCaught = false;
   pause = false;
   if (hero.classList.contains("ironman")) {
-    hero.style.backgroundImage = "url('../../images/dh/ironman/fly.png')";
+    hero.style.backgroundImage = "url('../images/dh/ironman/fly.png')";
   } else if (hero.classList.contains("spiderman")) {
-    hero.style.backgroundImage = "url('../../images/dh/spiderman/fly.png')";
+    hero.style.backgroundImage = "url('../images/dh/spiderman/fly.png')";
   } else if (hero.classList.contains("dr-strange")) {
-    hero.style.backgroundImage = "url('../../images/dh/dr-strange/fly.png')";
+    hero.style.backgroundImage = "url('../images/dh/dr-strange/fly.png')";
   }
 });

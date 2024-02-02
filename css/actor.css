@@ -166,13 +166,13 @@ main {
 }
 
 .fly.ironman {
-  background-image: url("../../images/dh/ironman/fly.png");
+  background-image: url("../images/dh/ironman/fly.png");
 }
 .fly.spiderman {
-  background-image: url("../../images/dh/spiderman/fly.png");
+  background-image: url("../images/dh/spiderman/fly.png");
 }
 .fly.dr-strange {
-  background-image: url("../../images/dh/dr-strange/fly.png");
+  background-image: url("../images/dh/dr-strange/fly.png");
 }
 
 @media screen and (min-width: 800px) {
