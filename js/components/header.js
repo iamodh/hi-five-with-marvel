@@ -16,18 +16,17 @@ lists.forEach((list) => {
 const open = document.querySelector("#open");
 const navMenu = document.querySelector(".nav-menu");
 const close = document.querySelector("#close");
-console.log(open);
 
 const slideIn = () => {
   navMenu.classList.remove("inactive");
   navMenu.classList.add("active");
-}
+};
 const slideOut = () => {
   navMenu.classList.add("inactive");
   navMenu.classList.remove("active");
-}
-close.addEventListener("click",slideOut)
-open.addEventListener("click", slideIn)
+};
+close.addEventListener("click", slideOut);
+open.addEventListener("click", slideIn);
 
 // nav-menu2
 const open2 = document.querySelectorAll(".menu-arrow");
@@ -37,23 +36,23 @@ const close2 = document.querySelector("#close2");
 const slideIn2 = () => {
   navMenu2.classList.add("active2");
   navMenu2.classList.remove("inactive2");
-}
+};
 const slideOut2 = () => {
   navMenu2.classList.add("inactive2");
   navMenu2.classList.remove("active2");
-}
-close2.addEventListener("click",slideOut2)
+};
+close2.addEventListener("click", slideOut2);
 
-open2.forEach((arrow)=>{
-  arrow.addEventListener("click",slideIn2);
-})
+open2.forEach((arrow) => {
+  arrow.addEventListener("click", slideIn2);
+});
 
 /* Header animation*/
 const header = document.body.querySelector("header");
 const main = document.querySelector("main");
 const headerTitle = document.querySelector(".nav-top-title");
 
-let lastScroll =  0;
+let lastScroll = 0;
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   const scrollUp = scrollY < lastScroll;
@@ -65,7 +64,7 @@ window.addEventListener("scroll", () => {
     } else {
       header.classList.remove("headerActive");
       header.classList.add("headerInactive");
-      headerTitle.innerText = "M"
+      headerTitle.innerText = "M";
     }
   } else {
     header.classList.remove("fixed");
@@ -74,9 +73,8 @@ window.addEventListener("scroll", () => {
   }
 
   if (scrollY === 0) {
-    
-    headerTitle.innerText = "MARVEL"
+    headerTitle.innerText = "MARVEL";
   }
-  
-  lastScroll = scrollY
-})
+
+  lastScroll = scrollY;
+});
